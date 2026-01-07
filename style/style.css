@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+body {
+  background-color: #020129f3;
+}
+.wrapper {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0 0 0;
+  font-family: "Poppins", sans-serif;
+}
+.header {
+  padding: 25px 20px;
+  border-radius: 16px;
+  border: 1px solid #747474;
+  background-color: #747474c9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.5s ease-in-out;
+}
+.header-title-box {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 6px;
+}
+.header-text-box {
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  gap: 6px;
+}
+.header-title {
+  color: gray;
+  font-size: 18px;
+  font-weight: 700;
+}
+.header-money {
+  color: rgb(58, 226, 238);
+  font-size: 24px;
+  font-weight: 700;
+}
+.header-text {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 600;
+}
+.header-online {
+  color: rgb(57, 255, 57);
+  font-size: 18px;
+}
+.header:hover {
+  box-shadow: 0 0 60px rgba(255, 255, 255, 0.5);
+}
+.market {
+  width: 1200px;
+  margin: 30px auto;
+  background-color: #747474;
+  border-radius: 18px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.market-item {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 14px;
+  border: 1px solid #747474;
+  background-color: #020129f3; /* body rangiga yaqin */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.4s ease;
+}
+
+.market-item-title {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.market-item-money {
+  font-size: 22px;
+  font-weight: 700;
+  align-self: flex-end;
+}
+
+.market-item-money.positive {
+  color: rgb(57, 255, 57);
+}
+
+.market-item-money.negative {
+  color: rgb(255, 77, 77);
+}
+
+.market-item:hover {
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.35);
+  transform: translateY(-3px);
+}
